@@ -1,4 +1,4 @@
-# Fumin OS
+# FuminOS
 An operative system for the enthusiast programmer.
 
 THIS IS UNDER HEAVY DEVELOPMENT
