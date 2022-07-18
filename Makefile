@@ -9,7 +9,7 @@ OBJ_FILES = ${C_SOURCES:.c=.o cpu/interrupt.o}
 all: run
 
 kernel.bin: boot/kernel-entry.o ${OBJ_FILES} 
-	x86_64-elf-ld -m elf_i386 -o $@ -Ttext 0x1000 $^ --oformat binary
+	x86_64-elf-ld -T script.ld -m elf_i386 -o $@ -Ttext 0x1000 $^ --oformat binary
 
 os-image.bin: boot/mbr.bin kernel.bin
 	cat $^ > $@
