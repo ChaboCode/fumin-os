@@ -1,6 +1,7 @@
 #include "str.h"
-#include <stdbool.h>
+#include "../kernel/utils.h"
 #include "../kernel/vga.h"
+#include "../kernel/mem.h"
 
 int string_length(char s[]) {
     int i = 0;
@@ -36,4 +37,12 @@ int split_spaces(char *str, int spaces) {
                 ++spaces_counted;
         }
         return ++i;        
+}
+
+void string_copy(char *str1, char *str2) {
+	int i = 0;
+	while(str1[i]) {
+		str2[i] = str1[i];
+		i++;
+	}
 }

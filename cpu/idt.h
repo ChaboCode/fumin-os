@@ -1,6 +1,6 @@
 #pragma once
 
-#include <stdint.h>
+#include "../kernel/utils.h"
 
 /* Segment selectors */
 #define KERNEL_CS 0x08

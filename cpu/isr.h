@@ -1,6 +1,6 @@
 #pragma once
 
-#include <stdint.h>
+#include "../kernel/utils.h"
 
 /* ISRs reserved for CPU exceptions */
 extern void isr0();

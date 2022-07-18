@@ -1,8 +1,8 @@
 #pragma once
 
-#include <stdint.h>
-#include <stddef.h>
-#include <stdbool.h>
+#include "../kernel/utils.h"
+#include "../kernel/utils.h"
+#include "../kernel/utils.h"
 
 typedef struct dynamic_mem_node
 {
